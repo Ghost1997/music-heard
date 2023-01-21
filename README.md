@@ -16,6 +16,7 @@ POSTGRES_DB=<database-name>
 POSTGRES_USER=<username-for-database>
 POSTGRES_PASSWORD=<password-to-database>
 DB_DIALECT=postgres
+JWT_SECRET=<secret>
 ```
 
 3. Install packages and start the application server.
