@@ -43,7 +43,7 @@ class UsersService {
     // delete password field
     delete user.password;
 
-    const token = jwt.sign({ id: user.id, email: user.email }, process.env.JWT_SECRET, { algorithm: 'HS256' });
+    const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET, { algorithm: 'HS256' });
     user.token = token;
 
     return user;

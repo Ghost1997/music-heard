@@ -8,6 +8,7 @@ import { swaggerDocument } from './swagger';
 import { adminbroRouter } from './routes/adminbro.route';
 import { artistsRouter } from './routes/artists.route';
 import { usersRouter } from './routes/users.route';
+import { spotifyRouter } from './routes/spotify.route';
 
 import { errorHandler, responseHandler, pageNotFoundHandler, initResLocalsHandler } from './middlewares';
 
@@ -25,9 +26,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(initResLocalsHandler);
 
 app.use('/admin', adminbroRouter);
-
 app.use('/artists', artistsRouter);
 app.use('/users', usersRouter);
+app.use('/spotify', spotifyRouter);
 
 // Use custom response handler
 app.use(responseHandler);

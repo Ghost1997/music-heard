@@ -1,3 +1,4 @@
 import { ArtistsService } from './artists.service';
 import { UsersService } from './users.services';
-export { ArtistsService, UsersService };
+import { SpotifyService } from './spotify.service';
+export { ArtistsService, UsersService, SpotifyService };
