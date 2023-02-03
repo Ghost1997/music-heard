@@ -7,13 +7,21 @@
 2. Set the following environment variables in your .env file
 
 ```
-POSTGRES_HOST=<address-where-database-running>
-POSTGRES_PORT=<port-where-database-running>
-POSTGRES_DB=<database-name>
-POSTGRES_USER=<username-for-database>
-POSTGRES_PASSWORD=<password-to-database>
-DB_DIALECT=postgres
-JWT_SECRET=<secret>
+//DB CRED
+POSTGRES_HOST=<some-value>
+POSTGRES_PORT=<some-value>
+POSTGRES_DB=<some-value>
+POSTGRES_USER=<some-value>
+POSTGRES_PASSWORD=<some-value>
+DB_DIALECT=<some-value>
+
+//JWT CRED
+JWT_SECRET=<some-value>
+
+//SPOTIFY CRED
+SPOTIFY_CLIENT_ID=<some-value>
+SPOTIFY_CLIENT_SECRET=<some-value>
+
 ```
 
 3. Install packages and start the application server.

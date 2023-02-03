@@ -12,13 +12,9 @@ class SpotifyService {
     let result = [];
     await setSpotifyAccessToken();
 
-    await spotifyApi
-      .searchArtists(search)
-      .then((res) => {
+    await spotifyApi.searchArtists(search).then((res) => {
         result = processSearchResult(res);
-      })
-      .catch((err) => {
-        console.log(err);
+      }).catch((err) => {
         throw new Unauthorized(messages.spotifyAPIError);
       });
 
